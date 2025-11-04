@@ -51,14 +51,15 @@ nav {
   color: #00bcd4;
 }
 
-/* Hamburger Menu */
+/* Hamburger Menu - visible on all devices now */
 .hamburger {
-  display: none;
-  font-size: 1.5em;
+  display: block;
+  font-size: 1.7em;
   cursor: pointer;
+  color: #333;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -89,14 +90,15 @@ nav {
   font-size: 1.2em;
 }
 
+/* Social Media Links */
 .social-links {
   margin-top: 20px;
 }
 
 .social-links a {
   color: white;
-  font-size: 1.5em;
-  margin: 0 10px;
+  font-size: 1.6em;
+  margin: 0 12px;
   transition: transform 0.3s, color 0.3s;
 }
 
@@ -105,7 +107,7 @@ nav {
   color: #ffeb3b;
 }
 
-/* About */
+/* About & Contact Sections */
 .about, .contact {
   padding: 120px 20px 80px;
   text-align: center;
@@ -124,7 +126,7 @@ nav {
   font-size: 1.1em;
 }
 
-/* Contact */
+/* Contact Form */
 form {
   max-width: 500px;
   margin: 0 auto;
@@ -165,7 +167,7 @@ footer {
   font-size: 0.9em;
 }
 
-/* Animations */
+/* Fade-in Animation */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -179,12 +181,8 @@ footer {
   }
 }
 
-/* Responsive */
+/* Responsive Styles */
 @media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
   .nav-links {
     position: absolute;
     top: 60px;
