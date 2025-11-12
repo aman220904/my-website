@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
 <body>
 
@@ -19,24 +18,25 @@
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
     </ul>
-    <div class="hamburger" id="hamburger">
+    <div class="hamburger" id="hamburger" aria-label="Open menu">
       <i class="fa-solid fa-bars"></i>
     </div>
   </nav>
 
-<!-- Side Panel -->
-  <div class="side-panel" id="side-panel">
+  <!-- Side Panel -->
+  <div class="side-panel" id="side-panel" aria-hidden="true">
     <div class="side-header">
       <h3>Menu</h3>
-      <span id="close-panel">&times;</span>
+      <span id="close-panel" role="button" aria-label="Close menu">&times;</span>
     </div>
 
     <ul class="side-options">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="#">Portfolio</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#">Settings</a></li>
     </ul>
 
@@ -52,17 +52,65 @@
   <!-- Hero Section -->
   <section class="hero fade-in">
     <div class="hero-content">
-      <img src="aman.jpg" alt="Amandeep" class="profile-img">
+      <img src="aman.jpg" alt="Amandeep portrait" class="profile-img">
       <h1>Hello, I'm <span>Amandeep</span></h1>
       <p>Web Designer & Chef</p>
-      <div class="social-links">
-  <a href="https://www.instagram.com/aman1hind" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-  <a href="https://www.linkedin.com/in/https://www.linkedin.com/in/amandeep-kaur-118891287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-  <a href="mailto:amanthind1105@email.com"><i class="fa-solid fa-envelope"></i></a>
-</div>
 
+      <div class="social-links">
+        <a href="https://www.instagram.com/aman1hind" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/amandeep-kaur-118891287/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="mailto:amanthind1105@gmail.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
     </div>
   </section>
+
+  <!-- ===== Portfolio (PDF) ===== -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <p>View or download my one-page professional portfolio.</p>
+
+      <div class="card project" style="padding:16px; border-radius:16px;">
+        <div class="project-body">
+          <h3 style="margin-top:0;">Portfolio (PDF)</h3>
+          <p>Opens in a new tab for easy viewing or download.</p>
+
+          <div class="actions" style="margin-top:10px; display:flex; gap:12px; flex-wrap:wrap;">
+            <!-- Use the full URL so it always works -->
+            <a class="cta"
+               href="https://aman220904.github.io/my-website/assets/docs/Amandeep_Kaur_Portfolio.pdf"
+               target="_blank" rel="noopener">View PDF</a>
+
+            <a class="ghost"
+               href="https://aman220904.github.io/my-website/assets/docs/Amandeep_Kaur_Portfolio.pdf"
+               download>Download</a>
+          </div>
+
+          <!-- Optional inline preview. Remove comments to enable. 
+          <div style="margin-top:16px; border-radius:12px; overflow:hidden;">
+            <object 
+              data="https://aman220904.github.io/my-website/assets/docs/Amandeep_Kaur_Portfolio.pdf#view=FitH" 
+              type="application/pdf" width="100%" height="600">
+              <p style="padding:12px;">
+                Your browser can’t preview this PDF. 
+                <a class="cta" href="https://aman220904.github.io/my-website/assets/docs/Amandeep_Kaur_Portfolio.pdf" target="_blank" rel="noopener">
+                  Open it in a new tab
+                </a>.
+              </p>
+            </object>
+          </div>
+          -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== End Portfolio ===== -->
 
   <footer>
     <p>© 2025 Amandeep | Designed with ❤️</p>
